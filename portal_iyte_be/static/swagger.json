@@ -1,0 +1,606 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API documentation for the Flask project",
+        "version": "1.0.0",
+        "title": "Flask API",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {
+            "email": "contact@yourapi.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "host": "localhost:5000",
+    "basePath": "/api",
+    "tags": [
+        {
+            "name": "user",
+            "description": "Operations about user"
+        },
+        {
+            "name": "post",
+            "description": "Operations about posts"
+        },
+        {
+            "name": "comment",
+            "description": "Operations about comments"
+        },
+        {
+            "name": "topic",
+            "description": "Operations about topics"
+        },
+        {
+            "name": "search",
+            "description": "Operations about searching"
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "prefix + '/verifyEmail/<token>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/login": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/register": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/<user_id>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/setBio": {
+            "put": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/setProfilePicture": {
+            "put": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/follow": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/unfollow": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/followers/<user_id>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/following/<user_id>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/likedPosts/<user_id>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/comments/<user_id>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/report": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/post/<query>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/topic/<query>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/user/<query>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            },
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + \"/<post_id>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + \"/topic/<topic_id>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + \"/like": {
+            "put": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + \"/unlike": {
+            "put": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + \"/save": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + \"/unsave": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + \"/saved/<user_id>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + \"/mostLiked": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + \"/user/<user_id>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + \"/<topic_id>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/post": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/comment": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/<post_id>": {
+            "get": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/like": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        },
+        "prefix + '/unlike": {
+            "post": {
+                "summary": "Add a brief description",
+                "description": "Detailed description of the endpoint",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "500": {
+                        "description": "Server error"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {}
+}
